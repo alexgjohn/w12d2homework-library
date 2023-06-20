@@ -60,4 +60,9 @@ public class LibraryTest {
         library.addBook(book6);
         assertEquals(5, library.bookCount());
     }
+
+    @Test
+    public void libraryCanGetNumberOfBooksByGenre(){
+        assertEquals(2, library.getNumberOfBooksByGenre("Horror"));
+    }
 }
